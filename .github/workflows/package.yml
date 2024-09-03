@@ -145,26 +145,26 @@ jobs:
       - windows-build
     steps:
       - name: Download the base package
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: base-package
       - name: Download mediapipe_android.aar
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: mediapipe_android.aar
           path: Packages/com.github.homuler.mediapipe/Runtime/Plugins/Android
       - name: Download libmediapipe_c.dylib
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: libmediapipe_c.dylib
           path: Packages/com.github.homuler.mediapipe/Runtime/Plugins
       - name: Download MediaPipeUnity.framework
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: MediaPipeUnity.framework
           path: Packages/com.github.homuler.mediapipe/Runtime/Plugins/iOS/MediaPipeUnity.framework
       - name: Download mediapipe_c.dll
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: mediapipe_c.dll
           path: Packages/com.github.homuler.mediapipe/Runtime/Plugins
